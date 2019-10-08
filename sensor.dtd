@@ -1,0 +1,9 @@
+<!DOCTYPE Sensor
+[
+    <!ELEMENT Sensor (Messung*)>
+        <!ATTLIST Sensor id CDATA >
+
+    <!ELEMENT Messung (#PCDATA)>
+        <!ATTLIST Messung wert CDATA >
+        <!ATTLIST Messung zeitstempel CDATA >
+]>
