@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class ArrayListe<T> implements Liste<T> {
+public class ArrayListe<T extends Comparable> implements Liste<T> {
     private Object[] _elemente;
     private int _anzahlElemente;
 
@@ -47,15 +47,17 @@ public class ArrayListe<T> implements Liste<T> {
     }
 
     public T gibKleinstesElement() {
-        T shortestValue = null;
+        T shortestElement = null;
 
         for (int x = 0; x <= _anzahlElemente -1; x++) {
-            if(this._elemente[x].toString().length() > shortestValue.toString().length()) {
-                shortestValue = (T) this._elemente[x];
+            T element =  (T) this._elemente[x];
+
+            if(shortestElement == null || element.compareTo(shortestElement) == 1) {
+                shortestElement = element;
             }
         }
 
-        return shortestValue;
+        return shortestElement;
     }
 
     public void leeren() {

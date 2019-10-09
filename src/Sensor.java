@@ -28,7 +28,7 @@ public class Sensor {
         sensor.createXml();
         ArrayListe<Messung> test = sensor.toListe();
         try {
-            System.out.println(test.gibElement(1).get_wert());
+            System.out.println(test.gibKleinstesElement().get_wert());
 
         } catch (Exception e) {
 

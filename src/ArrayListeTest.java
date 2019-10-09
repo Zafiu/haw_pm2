@@ -134,4 +134,29 @@ public class ArrayListeTest {
             e.printStackTrace();
         }
     }
+
+    @Test
+    public void testKleinstesElementValue() {
+        ArrayListe<Messung> liste = new ArrayListe<>();
+        Messung measurementOne = new Messung();
+        Messung measurementTwo = new Messung();
+        Messung measurementThree = new Messung();
+
+        measurementOne.set_wert(50.6);
+        measurementTwo.set_wert(32.1);
+        measurementThree.set_wert(50.6);
+
+        liste.hinzufuegen(measurementOne);
+        liste.hinzufuegen(measurementTwo);
+        liste.hinzufuegen(measurementThree);
+
+        Messung element = liste.gibKleinstesElement();
+
+        try {
+            Assert.assertEquals( 32.1, element.get_wert(), '*' );
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
