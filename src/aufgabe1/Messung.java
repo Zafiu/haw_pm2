@@ -1,3 +1,5 @@
+package aufgabe1;
+
 import java.time.LocalDateTime;
 
 public class Messung implements Comparable<Messung> {

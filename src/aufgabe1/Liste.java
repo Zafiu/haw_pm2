@@ -1,3 +1,5 @@
+package aufgabe1;
+
 public interface Liste<T> {
     /**
      * fuege ein neues Element hinzu

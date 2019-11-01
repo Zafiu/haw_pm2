@@ -1,3 +1,5 @@
+package aufgabe1;
+
 import java.util.Arrays;
 
 public class ArrayListe<T extends Comparable> implements Liste<T> {

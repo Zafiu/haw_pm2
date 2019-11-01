@@ -1,3 +1,5 @@
+package aufgabe1;
+
 import org.w3c.dom.*;
 
 import javax.xml.parsers.DocumentBuilder;
