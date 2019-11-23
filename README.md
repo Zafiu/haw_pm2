@@ -1,5 +1,5 @@
 
-## List of units from subject "pm2" at the Univery of Applied Sciences Hamburg
+## List of units from subject "pm2" at the University of Applied Sciences Hamburg
 
 ### Unit-1
 XML file reading and writing and also create your own ArrayList Class
